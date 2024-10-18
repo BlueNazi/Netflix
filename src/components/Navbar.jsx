@@ -62,7 +62,7 @@ export default function Navbar({ favorites, setSearchResults }) {
                     <p>{movieList[10]?.overview}</p>
                 </div>
             )}
-            <Trailer movieId={movieList[10]} />
+            
         </div>
     );
 }

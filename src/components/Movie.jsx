@@ -3,7 +3,7 @@ import BasicCard from './BasicCard';
 import { Link } from 'react-router-dom';
 import { MdOutlineWatchLater } from "react-icons/md";
 import Footer from './Footer';
-import Trailer from './Trailer'; // وارد کردن کامپوننت Trailer
+import Trailer from './Trailer'; 
 
 function Movie({ setFavorites, favorites, searchResults }) {
     const [movieList, setMovieList] = useState([]);
@@ -36,13 +36,13 @@ function Movie({ setFavorites, favorites, searchResults }) {
                         <Link to={`/MovieDetail/${movie.id}`}>
                             <BasicCard movie={movie} />
                         </Link>
-
-                        {/* افزودن کامپوننت Trailer و ارسال movie.id به عنوان props */}
+                        <div className='icons'>
                         <Trailer movieId={movie.id} /> 
 
                         <button onClick={() => toggleFavorite(movie)} className="favorite-button">
                             <MdOutlineWatchLater className={favorites.some(fav => fav.id === movie.id) ? 'star-filled' : 'star-empty'} />
                         </button>
+                        </div>
                     </div>
                 ))}
             </div>

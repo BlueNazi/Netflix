@@ -255,24 +255,6 @@ h2 {
 }
 
 
-.favorite-button {
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-
-.star-filled,
-.star-empty {
-  font-size: 40px;
-  color: rgb(116, 3, 3);
-  
-}
-
 .container .movie-card a {
   text-decoration: none;
 }
@@ -332,24 +314,51 @@ h2 {
 }
 
 .modal {
-  color: black;
-  background-color: white;
+  color: #9f0000;
+  background-color: black;
   border-radius: 6px;
-  border: 1px solid gray;
-  width: 110px;
-  position: absolute;
   font-family: inherit;
-  bottom: 12px;
-  font-size: 16px;
-  height: 30px;
+  font-size: 34px;
+  position: relative;
+  left: 80px;
+  height: 33px;
   font-weight: bold;
- 
-  left: 50%;
-  transform: translate(-50%, -50%);
+  
+}
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 120px; 
+}
+
+.favorite-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.favorite-button .star-empty {
+  color: #aaa; 
+  font-size: 35px;
+}
+
+.favorite-button .star-filled {
+  color: gold; 
+  font-size: 35px;
+}
+
+.favorite-button:hover .star-empty,
+.favorite-button:hover .star-filled {
+  color: #ff9800; 
+}
+
+.favorite-button:active {
+  transform: scale(0.95); 
 }
 
 .modal:hover {
-  background-color: rgb(66, 83, 90);
+  
   cursor: pointer;
   color: #ffffff
 }

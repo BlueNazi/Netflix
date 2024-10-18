@@ -2,6 +2,8 @@ import React from "react";
 import Modal from 'react-modal';
 import "../App.css";
 import Youtube from "react-youtube";
+import { LuMonitorPlay } from "react-icons/lu";
+
 
 const customStyles = {
     content: {
@@ -46,7 +48,7 @@ function Trailer({ movieId }) {
 
     return (
         <div>
-            <button onClick={openModal} className="modal">Play Trailer</button>
+            <button onClick={openModal} className="modal"><LuMonitorPlay /></button>
             <Modal
                 isOpen={modalIsOpen}
                 onAfterOpen={afterOpenModal}
