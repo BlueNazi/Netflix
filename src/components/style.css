@@ -1,0 +1,94 @@
+.login-container {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/in2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .login-form {
+    background-color: #0d1c1e;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    margin-bottom: 5px;
+    display: block;
+    font-size: 0.9rem;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    background-color: #333333;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+  }
+  
+  .input-group input:focus {
+    outline: none;
+    border: 2px solid #ff4500;
+  }
+  
+  .login-btn {
+    padding: 10px;
+    background-color: #003135;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .login-btn:hover {
+    background-color: #134135;
+  }
+
+  .ggl-btn{
+    padding: 10px;
+    background-color: #141414;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .ggl-btn:hover {
+    background-color: #012a50;
+  }
+
+  .logo2{
+    position: absolute; 
+    top: 10px;
+    left: 10px; 
+    width: 100px; 
+    height: auto;
+  }
+
+  body {
+    background-color: black; 
+    margin: 0;
+    color: white; 
+}
