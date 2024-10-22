@@ -31,7 +31,7 @@ export default function Navbar({ favorites, setSearchResults }) {
     return (
         <div className='banner' style={{
             backgroundImage: movieList.length > 0
-                ? `url(https://image.tmdb.org/t/p/original${movieList[10]?.poster_path})`
+                ? `url(https://image.tmdb.org/t/p/original${movieList[6]?.poster_path})`
                 : 'none'
         }}>
             <div className="navbar-header">
@@ -58,8 +58,8 @@ export default function Navbar({ favorites, setSearchResults }) {
 
             {movieList.length > 0 && (
                 <div className='movie-info'>
-                    <h2>{movieList[10]?.original_title}</h2>
-                    <p>{movieList[10]?.overview}</p>
+                    <h2>{movieList[6]?.original_title}</h2>
+                    <p>{movieList[6]?.overview}</p>
                 </div>
             )}
             
