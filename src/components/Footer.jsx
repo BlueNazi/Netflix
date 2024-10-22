@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="footer-section">
             <h4>THE BASICS</h4>
             <ul>
-              <li>About TMDB</li>
+              <li>About Netflix</li>
               <li>Contact Us</li>
               <li>Support Forums</li>
               <li>API</li>
