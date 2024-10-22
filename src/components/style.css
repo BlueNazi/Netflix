@@ -1,94 +1,142 @@
 .login-container {
-    background-color: #1c1c1c;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    background-image: url(../images/in2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    height: 100vh;
-  }
+  background-color: #1c1c1c;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  background-image: url(../images/in2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  height: 100vh;
+}
 
+.login-form {
+  background-color: #0d1c1e;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  display: block;
+  font-size: 0.9rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  background-color: #333333;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.input-group input:focus {
+  outline: none;
+  border: 2px solid #ff4500;
+}
+
+.login-btn {
+  padding: 10px;
+  background-color: #003135;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #134135;
+}
+
+.ggl-btn {
+  padding: 10px;
+  background-color: #141414;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.ggl-btn:hover {
+  background-color: #012a50;
+}
+
+.logo2 {
+  position: absolute; 
+  top: 10px;
+  left: 10px; 
+  width: 100px; 
+  height: auto;
+}
+
+body {
+  background-color: black; 
+  margin: 0;
+  color: white; 
+}
+
+@media (max-width: 768px) {
   .login-form {
-    background-color: #0d1c1e;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    width: 500px;
-    display: flex;
-    flex-direction: column;
+      width: 90%;
+      padding: 20px;
   }
-  
+
   .login-form h2 {
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    text-align: center;
-    color: #ffffff;
+      font-size: 1.2rem;
   }
-  
-  .input-group {
-    margin-bottom: 20px;
-  }
-  
+
   .input-group label {
-    margin-bottom: 5px;
-    display: block;
-    font-size: 0.9rem;
+      font-size: 0.8rem;
   }
-  
+
   .input-group input {
-    width: 100%;
-    padding: 10px;
-    background-color: #333333;
-    border: none;
-    border-radius: 5px;
-    color: #ffffff;
-  }
-  
-  .input-group input:focus {
-    outline: none;
-    border: 2px solid #ff4500;
-  }
-  
-  .login-btn {
-    padding: 10px;
-    background-color: #003135;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-  
-  .login-btn:hover {
-    background-color: #134135;
+      padding: 8px;
   }
 
-  .ggl-btn{
-    padding: 10px;
-    background-color: #141414;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
+  .login-btn,
+  .ggl-btn {
+      font-size: 0.9rem;
   }
-  .ggl-btn:hover {
-    background-color: #012a50;
+}
+
+@media (max-width: 480px) {
+  .login-form {
+      padding: 15px;
   }
 
-  .logo2{
-    position: absolute; 
-    top: 10px;
-    left: 10px; 
-    width: 100px; 
-    height: auto;
+  .login-form h2 {
+      font-size: 1rem;
   }
 
-  body {
-    background-color: black; 
-    margin: 0;
-    color: white; 
+  .input-group label {
+      font-size: 0.75rem;
+  }
+
+  .input-group input {
+      padding: 6px;
+  }
+
+  .login-btn,
+  .ggl-btn {
+      font-size: 0.8rem;
+  }
 }

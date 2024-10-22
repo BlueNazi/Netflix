@@ -26,7 +26,6 @@ body {
   text-align: center;
   text-decoration: none;
   border-radius: 10px;
-
 }
 
 .poster {
@@ -135,10 +134,9 @@ h2 {
 .movie-info {
   position: absolute;
   width: 700px;
-  
   font-family: inherit;
   color: white;
-  text-shadow: 1px 1px 3px rgba(45 45 45 / 70%);
+  text-shadow: 1px 1px 3px rgba(45, 45, 45, 0.7);
   max-width: 400px;
 }
 
@@ -162,7 +160,6 @@ h2 {
   width: 110px;
   position: absolute;
   font-family: inherit;
-  
   bottom: 30px;
   font-size: 16px;
   height: 30px;
@@ -173,7 +170,6 @@ h2 {
   background-color: rgb(66, 83, 90);
   cursor: pointer;
 }
-
 
 .star-filled {
   color: gold;
@@ -191,7 +187,6 @@ h2 {
 }
 
 .favorites-button {
-
   position: absolute;
   top: 10px;
   right: 150px;
@@ -204,12 +199,10 @@ h2 {
   font-size: 16px;
 }
 
-
 .favorites-button:hover {
   background-color: rgb(104, 104, 104);
   cursor: pointer;
 }
-
 
 .movie-info {
   background-color: rgba(0, 0, 0, 0.7);
@@ -217,7 +210,6 @@ h2 {
   border-radius: 5px;
   margin-top: 20px;
 }
-
 
 .favorites-container {
   background-color: rgba(255, 255, 255, 0.9);
@@ -248,12 +240,10 @@ h2 {
   border-radius: 5px;
 }
 
-
 .movie-card {
   position: relative;
   margin: 10px;
 }
-
 
 .container .movie-card a {
   text-decoration: none;
@@ -265,12 +255,13 @@ h2 {
 
 .star-empty {
   color: #808080;
- 
 }
+
 .movie-title {
   margin-bottom: 35px;
 }
-.movie-title h2{
+
+.movie-title h2 {
   text-decoration: none;
 }
 
@@ -309,7 +300,8 @@ h2 {
   max-width: 600px;
   width: 100%;
 }
-.loading{
+
+.loading {
   color: black;
 }
 
@@ -323,8 +315,8 @@ h2 {
   left: 80px;
   height: 33px;
   font-weight: bold;
-  
 }
+
 .icons {
   display: flex;
   align-items: center;
@@ -358,13 +350,11 @@ h2 {
 }
 
 .modal:hover {
-  
   cursor: pointer;
-  color: #ffffff
+  color: #ffffff;
 }
 
-
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .banner {
     height: 300px;
   }
@@ -373,9 +363,70 @@ h2 {
     width: 80px;
   }
 
-
   .favorites-button {
     font-size: 14px;
   }
+
+  .container {
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .movie-info {
+    width: 90%;
+  }
+
+  .movie-detail-card {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .movie-poster {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .navbar-header {
+    flex-direction: column;
+  }
+
+  .search-bar input {
+    width: 100%;
+    max-width: 250px;
+  }
 }
 
+@media (max-width: 480px) {
+  .banner {
+    height: 200px;
+    font-size: 1.5rem;
+  }
+
+  .movie-info h2 {
+    font-size: 40px;
+  }
+
+  .signin-button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .favorites-button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .trailer {
+    width: 80px;
+    font-size: 14px;
+    height: 28px;
+  }
+
+  .loading {
+    font-size: 1rem;
+  }
+}
